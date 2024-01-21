@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+]>
+
+<rdf:RDF xmlns="http://example.org/railway#" xml:base="http://example.org/railway"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#AxleCounter"/>
+	<owl:Class rdf:about="#Balise"/>
+	<owl:Class rdf:about="#CountingPoint"/>
+	<owl:Class rdf:about="#Crossing"/>
+	<owl:Class rdf:about="#Derailer"/>
+	<owl:Class rdf:about="#DoubleSlip"/>
+	<owl:Class rdf:about="#ETCS"/>
+	<owl:Class rdf:about="#ElectronicInterlocking"/>
+	<owl:Class rdf:about="#FieldElement"/>
+	<owl:Class rdf:about="#InterlockingSystem"/>
+	<owl:Class rdf:about="#LEU"/>
+	<owl:Class rdf:about="#LZB"/>
+	<owl:Class rdf:about="#LightSignal"/>
+	<owl:Class rdf:about="#MechanicalInterlocking"/>
+	<owl:Class rdf:about="#MechanicalSignal"/>
+	<owl:Class rdf:about="#OBU"/>
+	<owl:Class rdf:about="#RBC"/>
+	<owl:Class rdf:about="#RailwaySignal"/>
+	<owl:Class rdf:about="#RailwayStation"/>
+	<owl:Class rdf:about="#RailwaySwitch"/>
+	<owl:Class rdf:about="#RailwayTrack"/>
+	<owl:Class rdf:about="#SingleSlip"/>
+	<owl:Class rdf:about="#TrackCircuit"/>
+	<owl:Class rdf:about="#TrackClearDetection"/>
+	<owl:Class rdf:about="#TrainProtectionSystem"/>
+
+    <!-- Properties -->
+    <owl:ObjectProperty rdf:about="#refines"/>
+    <owl:ObjectProperty rdf:about="#requires"/>
+    <owl:ObjectProperty rdf:about="#conflicts"/>
+
+    <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#AxleCounter"/>
+	<owl:NamedIndividual rdf:about="#Balise"/>
+	<owl:NamedIndividual rdf:about="#CountingPoint"/>
+	<owl:NamedIndividual rdf:about="#Crossing"/>
+	<owl:NamedIndividual rdf:about="#Derailer"/>
+	<owl:NamedIndividual rdf:about="#DoubleSlip"/>
+	<owl:NamedIndividual rdf:about="#ETCS"/>
+	<owl:NamedIndividual rdf:about="#ElectronicInterlocking"/>
+	<owl:NamedIndividual rdf:about="#FieldElement"/>
+	<owl:NamedIndividual rdf:about="#InterlockingSystem"/>
+	<owl:NamedIndividual rdf:about="#LEU"/>
+	<owl:NamedIndividual rdf:about="#LZB"/>
+	<owl:NamedIndividual rdf:about="#LightSignal"/>
+	<owl:NamedIndividual rdf:about="#MechanicalInterlocking"/>
+	<owl:NamedIndividual rdf:about="#MechanicalSignal"/>
+	<owl:NamedIndividual rdf:about="#OBU"/>
+	<owl:NamedIndividual rdf:about="#RBC"/>
+	<owl:NamedIndividual rdf:about="#RailwaySignal"/>
+	<owl:NamedIndividual rdf:about="#RailwayStation"/>
+	<owl:NamedIndividual rdf:about="#RailwaySwitch"/>
+	<owl:NamedIndividual rdf:about="#RailwayTrack"/>
+	<owl:NamedIndividual rdf:about="#SingleSlip"/>
+	<owl:NamedIndividual rdf:about="#TrackCircuit"/>
+	<owl:NamedIndividual rdf:about="#TrackClearDetection"/>
+	<owl:NamedIndividual rdf:about="#TrainProtectionSystem"/>
+
+
+    <!-- Assertions -->
+    <rdf:Description rdf:about="#AxleCounter">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#TrackClearDetection"/>
+		<requires rdf:resource="#CountingPoint"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#Balise">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+		<requires rdf:resource="#ETCS"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#CountingPoint">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#Crossing">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#Derailer">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#DoubleSlip">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#Crossing"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#ETCS">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#TrainProtectionSystem"/>
+		<requires rdf:resource="#TrackClearDetection"/>
+		<requires rdf:resource="#RBC"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#ElectronicInterlocking">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#InterlockingSystem"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#FieldElement">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#InterlockingSystem">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#LEU">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+		<requires rdf:resource="#ETCS"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#LZB">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#ETCS"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#LightSignal">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#MechanicalInterlocking">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#InterlockingSystem"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#MechanicalSignal">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#OBU">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<requires rdf:resource="#ETCS"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#RBC">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#RailwaySignal">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#RailwayStation">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<requires rdf:resource="#RailwaySwitch"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#RailwaySwitch">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#RailwayTrack">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#FieldElement"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#SingleSlip">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#Crossing"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#TrackCircuit">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<conflicts rdf:resource="#CountingPoint"/>
+		<refines rdf:resource="#TrackClearDetection"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#TrackClearDetection">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#TrainProtectionSystem">
+		<rdf:type rdf:resource="&owl;NamedIndividual"/>
+		<refines rdf:resource="#ETCS"/>
+	</rdf:Description>
+
+
+</rdf:RDF>

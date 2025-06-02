@@ -1,6 +1,6 @@
 # Automated Requirements Relations Extraction - Handbook on Natural Language Processing for Requirements Engineering
 
-Notebook and datasets for Chapter 8 "Automated Requirements Relations Extraction" from "Handbook on Natural Language Processing for Requirements Engineering". This chapter presents a comprehensive overview of natural language-based relation extraction from text-based requirements. We structure these techniques into two different sub-sections: 
+Notebook and datasets for Chapter 7 "Automated Requirements Relations Extraction" from "Handbook on Natural Language Processing for Requirements Engineering". This chapter presents a comprehensive overview of natural language-based relation extraction from text-based requirements. We structure these techniques into two different sub-sections: 
 
 1. **NLP Knowledge Representation Techniques** for the identification and categorization of requirements relations (i.e., syntactic vs. semantic techniques)
 2. **Information Extraction Methods** for the task of relation extraction (i.e., retrieval-based vs. machine learning-based methods).

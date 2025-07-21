@@ -11,7 +11,8 @@ To cite the [notebook]([https://github.com/quim-motger/NLP4RE_RelationExtraction
 
 - Motger, Q., Franch, X. (2025). Automated Requirements Relations Extraction. In: Ferrari, A., Ginde, G. (eds) Handbook on Natural Language Processing for Requirements Engineering. Springer, Cham. https://doi.org/10.1007/978-3-031-73143-3_7
 
-<pre> @Inbook{Motger2025,
+```
+@Inbook{Motger2025,
     author="Motger, Quim
     and Franch, Xavier",
     editor="Ferrari, Alessio
@@ -24,7 +25,8 @@ To cite the [notebook]([https://github.com/quim-motger/NLP4RE_RelationExtraction
     pages="177--206",
     isbn="978-3-031-73143-3",
     doi="10.1007/978-3-031-73143-3_7"
-}</pre>
+}
+```
 
 To cite the [requirements data set](https://github.com/quim-motger/NLP4RE_RelationExtraction/tree/main/data/requirements), please use the following citation:
 

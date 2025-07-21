@@ -11,6 +11,21 @@ To cite the [notebook]([https://github.com/quim-motger/NLP4RE_RelationExtraction
 
 - Motger, Q., Franch, X. (2025). Automated Requirements Relations Extraction. In: Ferrari, A., Ginde, G. (eds) Handbook on Natural Language Processing for Requirements Engineering. Springer, Cham. https://doi.org/10.1007/978-3-031-73143-3_7
 
+<pre> @Inbook{Motger2025,
+    author="Motger, Quim
+    and Franch, Xavier",
+    editor="Ferrari, Alessio
+    and Ginde, Gouri",
+    title="Automated Requirements Relations Extraction",
+    bookTitle="Handbook on Natural Language Processing for Requirements Engineering",
+    year="2025",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="177--206",
+    isbn="978-3-031-73143-3",
+    doi="10.1007/978-3-031-73143-3_7"
+}</pre>
+
 To cite the [requirements data set](https://github.com/quim-motger/NLP4RE_RelationExtraction/tree/main/data/requirements), please use the following citation:
 
 - Deshpande, G., Arora, C., Ruhe, G.: Data-driven elicitation and optimization of dependencies between requirements. In: 2019 IEEE 27th International Requirements Engineering Conference (RE). pp. 416–421 (2019). https://doi.org/10.1109/RE.2019.00055
